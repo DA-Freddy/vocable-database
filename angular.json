@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "fire-vocable-app:build:production",
+              "serveTarget": "fire-vocable-app:serve:production"
+            },
+            "development": {
+              "buildTarget": "fire-vocable-app:build:development",
+              "serveTarget": "fire-vocable-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

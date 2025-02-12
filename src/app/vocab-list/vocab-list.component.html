@@ -1,0 +1,9 @@
+<h2>Meine Vokabeln</h2>
+
+@for (item of vocabService.vocabList; track $index) {
+   <p>{{item.english}} - {{item.german}}</p> 
+}
+
+<input [(ngModel)]="english" type="text">
+<input [(ngModel)]="german" type="text">
+<button (click)="addVocabList()">Neue Variable</button>

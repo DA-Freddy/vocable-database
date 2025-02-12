@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "vocab-app-31aae": {
+      "hosting": {
+        "fire-vocable-app": [
+          "vocab-app-31aae"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "vocab-app-31aae"
+  }
+}
