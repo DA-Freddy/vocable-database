@@ -2,8 +2,11 @@
 
 @for (item of vocabService.vocabList; track $index) {
    <p>{{item.english}} - {{item.german}}</p> 
-}
+   <button (click)="vocabService.deleteVocab($index)">Delete</button>
+   <button (click)="vocabService.updateVocab($index, english, german)">Update</button>
 
+}
+<br>
 <input [(ngModel)]="english" type="text">
 <input [(ngModel)]="german" type="text">
 <button (click)="addVocabList()">Neue Variable</button>

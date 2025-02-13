@@ -22,6 +22,8 @@ export class VocabListComponent {
       'english': this.english,
     }
 
-    this.vocabService.addVocab(newVocab);
+    if(newVocab.german != ''  && newVocab.english != ''){
+      this.vocabService.addVocab(newVocab);
+    }
   }
 }
